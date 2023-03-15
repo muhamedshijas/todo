@@ -9,9 +9,12 @@ const [toDo,setTodo]=useState([])
 
 
 const handleDelete = (id) => {
+  {window.alert("Are you sure to continue")}
   const newTodo = toDo.filter((item) => item.id !== id);
   setTodo(newTodo);
 };
+
+
 
   return (
     <div>
@@ -38,7 +41,7 @@ const handleDelete = (id) => {
       }}
       
       value={item.status} className='checkbox' name="" id="" />
-      <p>{item.text}</p>
+      <b style={{color:item.status?"Green":"Black"}}>{item.text}</b>
       <div className="delete">
       <i class="ri-delete-bin-6-line" onClick={()=>handleDelete(item.id)}></i>
       </div>
