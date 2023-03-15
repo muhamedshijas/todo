@@ -1,5 +1,5 @@
 .todo{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgba(242, 242, 242, 0.807);
   display: flex;
@@ -66,4 +66,7 @@ h1{
   font-size: 18px;
   font-weight: 500;
   font-family: fantasy;
+}
+button:disabled{
+  opacity: 50%;
 }
